@@ -20,9 +20,9 @@ app.get("/api", (req, res) =>{
 
 routerApi(app);
 
+const port = process.env.PORT || 3000;
 
 
-
-app.listen(process.env.PORT, () =>{
-  console.log(`Servidor corriendo en el puerto ${process.env.PORT}`);
+app.listen(port, () =>{
+  console.log(`Servidor corriendo en el puerto ${port}`);
 });
